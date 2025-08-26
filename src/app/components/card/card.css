@@ -1,0 +1,25 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-body h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.card-body p {
+  margin: 0;
+  color: #555;
+}
