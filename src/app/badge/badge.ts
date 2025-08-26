@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   templateUrl: './badge.html',
   styleUrl: './badge.css'
 })
-export class BadgeComponent {
+export class Badge {
   @Input() text: string = '';
   @Input() color: 'primary' | 'secondary' | 'success' | 'warning' | 'danger' = 'primary';
 }

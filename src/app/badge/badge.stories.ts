@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 import { moduleMetadata } from '@storybook/angular';
-import { BadgeComponent } from './badge';
+import { Badge } from './badge';
 
-const meta: Meta<BadgeComponent> = {
+const meta: Meta<Badge> = {
   title: 'Components/Badge',
-  component: BadgeComponent,
+  component: Badge,
   decorators: [
     moduleMetadata({
-      imports: [BadgeComponent],
+      imports: [Badge],
     }),
   ],
   tags: ['autodocs'],
@@ -19,7 +19,7 @@ const meta: Meta<BadgeComponent> = {
   },
 };
 export default meta;
-type Story = StoryObj<BadgeComponent>;
+type Story = StoryObj<Badge>;
 
 export const Primary: Story = {
   args: {
@@ -30,7 +30,22 @@ export const Primary: Story = {
 
 export const Danger: Story = {
   args: {
-    text: 'Alerta',
+    text: 'Perigo',
     color: 'danger',
   },
 };
+
+export const Success: Story = {
+  args: {
+    text: 'Sucesso',
+    color: 'success',
+  },
+};
+
+export const Warning: Story = {
+  args: {
+    text: 'Alerta',
+    color: 'warning',
+  },
+};
+

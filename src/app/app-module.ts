@@ -4,13 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { Card } from './components/card/card';
-import { BadgeComponent } from './badge/badge';
+import { Badge } from './badge/badge';
 
 @NgModule({
   declarations: [
     App,
     Card,
-    BadgeComponent
+    Badge
   ],
   imports: [
     BrowserModule,
